@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "mystic-grove",
+	"version": "${version}",
+	"name": "Mystic Grove",
+	"description": "The mystic grove is a new biome with a new content to explore!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"developer": "https://binaris.carrd.co",
+	},
+	"license": "MIT",
+	"icon": "assets/mystic-grove/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"binaris.mystic_grove.MysticGrove"
+		],
+		"client": [
+			"binaris.mystic_grove.MysticGroveClient"
+		],
+		"fabric-datagen": [
+			"binaris.mystic_grove.MysticGroveDataGenerator"
+		]
+	},
+	"mixins": [
+		"mystic-grove.mixins.json",
+		{
+			"config": "mystic-grove.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
