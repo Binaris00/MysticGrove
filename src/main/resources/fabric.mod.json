@@ -8,7 +8,7 @@
 		"Me!"
 	],
 	"contact": {
-		"developer": "https://binaris.carrd.co",
+		"developer": "https://binaris.carrd.co"
 	},
 	"license": "MIT",
 	"icon": "assets/mystic-grove/icon.png",
@@ -22,6 +22,9 @@
 		],
 		"fabric-datagen": [
 			"binaris.mystic_grove.MysticGroveDataGenerator"
+		],
+		"terrablender": [
+			"binaris.mystic_grove.MysticTerraBlender"
 		]
 	},
 	"mixins": [
