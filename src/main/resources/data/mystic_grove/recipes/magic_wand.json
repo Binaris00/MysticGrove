@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  L",
+    " L ",
+    "L  "
+  ],
+  "key": {
+    "L": {
+      "item": "mystic_grove:luminite"
+    }
+  },
+  "result": {
+    "item": "mystic_grove:magic_wand"
+  }
+}

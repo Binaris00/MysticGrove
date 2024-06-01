@@ -1,6 +1,7 @@
 package binaris.mystic_grove.registry;
 
 import binaris.mystic_grove.MysticGroveMod;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -46,5 +47,6 @@ public final class MysticBlocks {
      */
     private static void registerBlockItem(String name, BlockItem block) {
         Registry.register(Registries.ITEM, MysticGroveMod.id(name), block);
+        ItemGroupEvents.modifyEntriesEvent(MysticItemGroup.ITEM_GROUP).register(entries -> entries.add(block));
     }
 }

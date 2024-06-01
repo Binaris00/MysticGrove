@@ -22,6 +22,8 @@ public class ModelGenerator extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(MysticItems.LUMINITE, Models.GENERATED);
+        itemModelGenerator.register(MysticItems.MYSTIC_MIRROR, Models.HANDHELD);
+        itemModelGenerator.register(MysticItems.MAGIC_WAND, Models.HANDHELD);
 
     }
 }

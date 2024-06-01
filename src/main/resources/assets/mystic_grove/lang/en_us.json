@@ -1,5 +1,17 @@
 {
+  "itemGroup.mystic_grove.item_group": "Mystic Grove",
+
+
   "block.mystic_grove.luminite_ore": "Luminite Ore",
   "item.mystic_grove.luminite_ore": "Luminite Ore",
-  "item.mystic_grove.luminite": "Luminite"
+  "item.mystic_grove.luminite": "Luminite",
+  "item.mystic_grove.mystic_mirror": "Mystic Mirror",
+  "item.mystic_grove.magic_wand": "Magic Wand",
+
+  "item.mystic_grove.mystic_mirror.use": "New position set! X: %s, Y: %s, Z: %s",
+  "item.mystic_grove.mystic_mirror.no_saved_pos": "No position saved, please use the mirror on a block to save a position",
+  "item.mystic_grove.mystic_mirror.tooltip_1": "Right click on a block to save a position,",
+  "item.mystic_grove.mystic_mirror.tooltip_2": "then right click again to teleport to that position",
+  "item.mystic_grove.mystic_mirror.tooltip_save": "Saved position: X: %s, Y: %s, Z: %s",
+  "item.mystic_grove.magic_wand.tooltip": "Attracts entities when used"
 }

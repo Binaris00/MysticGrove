@@ -1,6 +1,7 @@
 package binaris.mystic_grove;
 
 import binaris.mystic_grove.registry.MysticBlocks;
+import binaris.mystic_grove.registry.MysticItemGroup;
 import binaris.mystic_grove.registry.MysticItems;
 import binaris.mystic_grove.world.biome.MysticGroveRegion;
 import binaris.mystic_grove.world.biome.MysticGroveRules;
@@ -31,6 +32,7 @@ public class MysticGroveMod implements ModInitializer, TerraBlenderApi {
 
 		MysticBlocks.register();
 		MysticItems.register();
+		MysticItemGroup.register();
 	}
 
 	/**

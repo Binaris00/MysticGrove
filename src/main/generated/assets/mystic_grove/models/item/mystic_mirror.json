@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "mystic_grove:item/mystic_mirror"
+  }
+}
