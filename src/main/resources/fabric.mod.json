@@ -11,11 +11,11 @@
 		"developer": "https://binaris.carrd.co"
 	},
 	"license": "MIT",
-	"icon": "assets/mystic-grove/icon.png",
+	"icon": "assets/mystic_grove/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"binaris.mystic_grove.MysticGrove"
+          "binaris.mystic_grove.MysticGroveMod"
 		],
 		"client": [
 			"binaris.mystic_grove.MysticGroveClient"
@@ -24,7 +24,7 @@
 			"binaris.mystic_grove.MysticGroveDataGenerator"
 		],
 		"terrablender": [
-			"binaris.mystic_grove.MysticTerraBlender"
+			"binaris.mystic_grove.MysticGroveMod"
 		]
 	},
 	"mixins": [

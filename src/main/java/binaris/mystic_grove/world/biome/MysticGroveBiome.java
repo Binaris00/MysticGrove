@@ -1,9 +1,7 @@
 package binaris.mystic_grove.world.biome;
 
-import binaris.mystic_grove.MysticGrove;
+import binaris.mystic_grove.MysticGroveMod;
 import net.minecraft.client.sound.MusicType;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.SpawnGroup;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -20,10 +18,10 @@ import net.minecraft.world.gen.feature.VegetationPlacedFeatures;
 
 public class MysticGroveBiome {
     public static final RegistryKey<Biome> MYSTIC_GROVE = RegistryKey.of(RegistryKeys.BIOME,
-            MysticGrove.id("mystic_grove"));
+            MysticGroveMod.id("mystic_grove"));
 
     public static void boostrap(Registerable<Biome> context) {
-        context.register(MYSTIC_GROVE, testBiome(context));
+        context.register(MYSTIC_GROVE, setBiome(context));
     }
 
     public static void globalOverworldGeneration(GenerationSettings.LookupBackedBuilder builder) {
@@ -35,10 +33,8 @@ public class MysticGroveBiome {
         DefaultBiomeFeatures.addFrozenTopLayer(builder);
     }
 
-    public static Biome testBiome(Registerable<Biome> context) {
+    public static Biome setBiome(Registerable<Biome> context) {
         SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
-
-        spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.WOLF, 5, 4, 4));
 
         DefaultBiomeFeatures.addFarmAnimals(spawnBuilder);
         DefaultBiomeFeatures.addBatsAndMonsters(spawnBuilder);
@@ -48,7 +44,6 @@ public class MysticGroveBiome {
                         context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
 
         globalOverworldGeneration(biomeBuilder);
-        DefaultBiomeFeatures.addMossyRocks(biomeBuilder);
         DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
         DefaultBiomeFeatures.addExtraGoldOre(biomeBuilder);
 
@@ -57,6 +52,7 @@ public class MysticGroveBiome {
         DefaultBiomeFeatures.addLargeFerns(biomeBuilder);
 
         DefaultBiomeFeatures.addDefaultMushrooms(biomeBuilder);
+        DefaultBiomeFeatures.addMushroomFieldsFeatures(biomeBuilder);
         DefaultBiomeFeatures.addDefaultVegetation(biomeBuilder);
 
         return new Biome.Builder()

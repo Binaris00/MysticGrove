@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "mystic_grove:block/simple_block"
+    "all": "mystic_grove:block/luminite_ore"
   }
 }
