@@ -1,2 +1,9 @@
-// 1.20.4	2024-06-01T10:51:54.9654495	Mystic Grove/Block Loot Tables
+// 1.20.4	2024-06-01T16:54:59.7355596	Mystic Grove/Block Loot Tables
 b6b520a9bf45c48e0b3d0da17cc295537601b83d data\mystic_grove\loot_tables\blocks\luminite_ore.json
+1a2f3b1ba4e4ef877f0032909a5ff09907d9a614 data\mystic_grove\loot_tables\blocks\mystic_leaves.json
+83ed99c81838d19e69f5f554d273afd5ef8f4f06 data\mystic_grove\loot_tables\blocks\stripped_mystic_log.json
+59e52067aca9c2b9194c15e52d65f884ac67689c data\mystic_grove\loot_tables\blocks\glowshroom.json
+55812ed617011effaf63685c9941465a13fa3bc1 data\mystic_grove\loot_tables\blocks\stripped_mystic_wood.json
+4f43e6d19f0837bc56f331c4de689c66498b3f16 data\mystic_grove\loot_tables\blocks\mystic_planks.json
+64734dda508bdbba7978a12bdf497f69e350c65e data\mystic_grove\loot_tables\blocks\mystic_wood.json
+a9ea5db9abc250360cc5185a98fab03a99f7e241 data\mystic_grove\loot_tables\blocks\mystic_log.json

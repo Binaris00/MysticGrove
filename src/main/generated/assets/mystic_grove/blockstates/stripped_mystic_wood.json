@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "mystic_grove:block/stripped_mystic_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "mystic_grove:block/stripped_mystic_wood"
+    },
+    "axis=z": {
+      "model": "mystic_grove:block/stripped_mystic_wood",
+      "x": 90
+    }
+  }
+}

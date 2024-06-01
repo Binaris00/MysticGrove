@@ -1,3 +1,6 @@
-// 1.20.4	2024-06-01T10:51:54.9664552	Mystic Grove/Tags for minecraft:block
+// 1.20.4	2024-06-01T16:54:59.7355596	Mystic Grove/Tags for minecraft:block
 9fd7628e4baae0dffb7958747fa8417f7d8793a1 data\minecraft\tags\blocks\mineable\pickaxe.json
 9fd7628e4baae0dffb7958747fa8417f7d8793a1 data\minecraft\tags\blocks\needs_stone_tool.json
+b4c5787734ae8f966a0cdfaeebacc47b2e00e59a data\minecraft\tags\blocks\logs_that_burn.json
+8f306a8d930ea1ea4080b4b4c9d16f0ae449eb99 data\minecraft\tags\blocks\leaves.json
+b4c5787734ae8f966a0cdfaeebacc47b2e00e59a data\minecraft\tags\blocks\mineable\axe.json

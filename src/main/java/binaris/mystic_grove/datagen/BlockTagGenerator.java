@@ -18,8 +18,22 @@ public class BlockTagGenerator extends FabricTagProvider.BlockTagProvider{
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(MysticBlocks.LUMINITE_ORE);
 
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .add(MysticBlocks.MYSTIC_LOG)
+                .add(MysticBlocks.MYSTIC_WOOD)
+                .add(MysticBlocks.STRIPPED_MYSTIC_LOG)
+                .add(MysticBlocks.STRIPPED_MYSTIC_WOOD);
+
+        getOrCreateTagBuilder(BlockTags.LEAVES)
+                .add(MysticBlocks.MYSTIC_LEAVES);
+
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(MysticBlocks.LUMINITE_ORE);
 
+        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
+                .add(MysticBlocks.MYSTIC_LOG)
+                .add(MysticBlocks.MYSTIC_WOOD)
+                .add(MysticBlocks.STRIPPED_MYSTIC_LOG)
+                .add(MysticBlocks.STRIPPED_MYSTIC_WOOD);
     }
 }

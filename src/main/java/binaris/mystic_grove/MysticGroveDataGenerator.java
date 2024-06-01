@@ -1,6 +1,7 @@
 package binaris.mystic_grove;
 
 import binaris.mystic_grove.datagen.BlockTagGenerator;
+import binaris.mystic_grove.datagen.ItemTagGenerator;
 import binaris.mystic_grove.datagen.LootTableGenerator;
 import binaris.mystic_grove.datagen.ModelGenerator;
 import binaris.mystic_grove.world.biome.MysticGroveBiome;
@@ -19,6 +20,7 @@ public class MysticGroveDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModelGenerator::new);
 		pack.addProvider(LootTableGenerator::new);
 		pack.addProvider(BlockTagGenerator::new);
+		pack.addProvider(ItemTagGenerator::new);
 	}
 
 	@Override

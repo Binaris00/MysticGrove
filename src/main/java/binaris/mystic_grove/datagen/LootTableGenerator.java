@@ -13,5 +13,12 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(MysticBlocks.LUMINITE_ORE, MysticItems.LUMINITE);
+        addDrop(MysticBlocks.MYSTIC_LOG);
+        addDrop(MysticBlocks.MYSTIC_WOOD);
+        addDrop(MysticBlocks.STRIPPED_MYSTIC_LOG);
+        addDrop(MysticBlocks.STRIPPED_MYSTIC_WOOD);
+        addDrop(MysticBlocks.MYSTIC_PLANKS);
+        addDrop(MysticBlocks.MYSTIC_LEAVES);
+        addDrop(MysticBlocks.GLOW_SHROOM);
     }
 }

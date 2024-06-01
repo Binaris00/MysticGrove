@@ -1,17 +1,30 @@
 {
   "itemGroup.mystic_grove.item_group": "Mystic Grove",
-
-
   "block.mystic_grove.luminite_ore": "Luminite Ore",
   "item.mystic_grove.luminite_ore": "Luminite Ore",
   "item.mystic_grove.luminite": "Luminite",
   "item.mystic_grove.mystic_mirror": "Mystic Mirror",
   "item.mystic_grove.magic_wand": "Magic Wand",
-
   "item.mystic_grove.mystic_mirror.use": "New position set! X: %s, Y: %s, Z: %s",
   "item.mystic_grove.mystic_mirror.no_saved_pos": "No position saved, please use the mirror on a block to save a position",
   "item.mystic_grove.mystic_mirror.tooltip_1": "Right click on a block to save a position,",
   "item.mystic_grove.mystic_mirror.tooltip_2": "then right click again to teleport to that position",
   "item.mystic_grove.mystic_mirror.tooltip_save": "Saved position: X: %s, Y: %s, Z: %s",
-  "item.mystic_grove.magic_wand.tooltip": "Attracts entities when used"
+  "item.mystic_grove.magic_wand.tooltip": "Attracts entities when used",
+  "block.mystic_grove.mystic_log": "Mystic Log",
+  "item.mystic_grove.mystic_log": "Mystic Log",
+  "block.mystic_grove.mystic_wood": "Mystic Wood",
+  "item.mystic_grove.mystic_wood": "Mystic Wood",
+  "block.mystic_grove.stripped_mystic_log": "Stripped Mystic Log",
+  "item.mystic_grove.stripped_mystic_log": "Stripped Mystic Log",
+  "block.mystic_grove.stripped_mystic_wood": "Stripped Mystic Wood",
+  "item.mystic_grove.stripped_mystic_wood": "Stripped Mystic Wood",
+  "block.mystic_grove.mystic_planks": "Mystic Planks",
+  "item.mystic_grove.mystic_planks": "Mystic Planks",
+  "block.mystic_grove.mystic_leaves": "Mystic Leaves",
+  "item.mystic_grove.mystic_leaves": "Mystic Leaves",
+  "block.mystic_grove.mystic_sapling": "Mystic Sapling",
+  "item.mystic_grove.mystic_sapling": "Mystic Sapling",
+  "block.mystic_grove.mystic_grass": "Mystic Grass",
+  "block.mystic_grove.glowshroom": "Glowshroom"
 }

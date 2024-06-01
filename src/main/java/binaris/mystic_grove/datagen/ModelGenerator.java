@@ -16,7 +16,10 @@ public class ModelGenerator extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(MysticBlocks.LUMINITE_ORE);
-
+        blockStateModelGenerator.registerLog(MysticBlocks.MYSTIC_LOG).log(MysticBlocks.MYSTIC_LOG).wood(MysticBlocks.MYSTIC_WOOD);
+        blockStateModelGenerator.registerLog(MysticBlocks.STRIPPED_MYSTIC_LOG).log(MysticBlocks.STRIPPED_MYSTIC_LOG).wood(MysticBlocks.STRIPPED_MYSTIC_WOOD);
+        blockStateModelGenerator.registerSimpleCubeAll(MysticBlocks.MYSTIC_PLANKS);
+        blockStateModelGenerator.registerSimpleCubeAll(MysticBlocks.MYSTIC_LEAVES);
     }
 
     @Override

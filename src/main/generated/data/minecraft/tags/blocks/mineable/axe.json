@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "mystic_grove:mystic_log",
+    "mystic_grove:mystic_wood",
+    "mystic_grove:stripped_mystic_log",
+    "mystic_grove:stripped_mystic_wood"
+  ]
+}

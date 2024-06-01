@@ -1,10 +1,15 @@
 package binaris.mystic_grove.registry;
 
 import binaris.mystic_grove.MysticGroveMod;
+import binaris.mystic_grove.block.GlowShroom;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.LeavesBlock;
+import net.minecraft.block.PillarBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -20,12 +25,36 @@ public final class MysticBlocks {
         // Private constructor to prevent instantiation.
     }
 
+    public static Block MYSTIC_LOG = new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(4f));
+    public static Block MYSTIC_WOOD = new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD).strength(4f));
+    public static Block STRIPPED_MYSTIC_LOG = new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG).strength(4f));
+    public static Block STRIPPED_MYSTIC_WOOD = new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(4f));
+    public static Block MYSTIC_PLANKS = new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(4f));
+    public static Block MYSTIC_LEAVES = new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(4f).nonOpaque());
     public static Block LUMINITE_ORE = new Block(FabricBlockSettings.copyOf(Blocks.GOLD_ORE).hardness(3.0f).resistance(3.0f).luminance(40).requiresTool());
-    public static BlockItem LUMINITE_ORE_ITEM = new BlockItem(LUMINITE_ORE, new Item.Settings());
 
+
+    public static Block GLOW_SHROOM = new GlowShroom();
     public static void register() {
-        registerBlock("luminite_ore", LUMINITE_ORE);
-        registerBlockItem("luminite_ore", LUMINITE_ORE_ITEM);
+        registerBlockItem("luminite_ore", LUMINITE_ORE);
+        registerBlockItem("mystic_log", MYSTIC_LOG);
+        registerBlockItem("mystic_wood", MYSTIC_WOOD);
+        registerBlockItem("stripped_mystic_log", STRIPPED_MYSTIC_LOG);
+        registerBlockItem("stripped_mystic_wood", STRIPPED_MYSTIC_WOOD);
+        registerBlockItem("mystic_planks", MYSTIC_PLANKS);
+        registerBlockItem("mystic_leaves", MYSTIC_LEAVES);
+        registerBlockItem("glowshroom", GLOW_SHROOM);
+
+        StrippableBlockRegistry.register(MYSTIC_LOG, STRIPPED_MYSTIC_LOG);
+        StrippableBlockRegistry.register(MYSTIC_WOOD, STRIPPED_MYSTIC_WOOD);
+
+        FlammableBlockRegistry.getDefaultInstance().add(MYSTIC_LOG, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(MYSTIC_WOOD, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(STRIPPED_MYSTIC_LOG, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(STRIPPED_MYSTIC_WOOD, 5, 5);
+
+        FlammableBlockRegistry.getDefaultInstance().add(MYSTIC_PLANKS, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(MYSTIC_LEAVES, 30, 60);
     }
 
 
@@ -40,13 +69,14 @@ public final class MysticBlocks {
     }
 
     /**
-     * Registers a block item with the given name.
+     * Registers a block item with the given name and block.
      *
      * @param name  The name of the block item.
      * @param block The block item to register.
      */
-    private static void registerBlockItem(String name, BlockItem block) {
-        Registry.register(Registries.ITEM, MysticGroveMod.id(name), block);
+    private static void registerBlockItem(String name, Block block) {
+        registerBlock(name, block);
+        Registry.register(Registries.ITEM, MysticGroveMod.id(name), new BlockItem(block, new Item.Settings()));
         ItemGroupEvents.modifyEntriesEvent(MysticItemGroup.ITEM_GROUP).register(entries -> entries.add(block));
     }
 }
