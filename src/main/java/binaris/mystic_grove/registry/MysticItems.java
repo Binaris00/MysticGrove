@@ -1,6 +1,7 @@
 package binaris.mystic_grove.registry;
 
 import binaris.mystic_grove.MysticGroveMod;
+import binaris.mystic_grove.item.CrushedGlowingMushroom;
 import binaris.mystic_grove.item.MagicWand;
 import binaris.mystic_grove.item.MysticMirror;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -17,11 +18,13 @@ public final class MysticItems {
     public static Item LUMINITE = new Item(new Item.Settings());
     public static Item MYSTIC_MIRROR = new MysticMirror();
     public static Item MAGIC_WAND = new MagicWand();
+    public static Item CRUSHED_GLOW_MUSHROOM = new CrushedGlowingMushroom();
 
     public static void register(){
         registerItem("luminite", LUMINITE);
         registerItem("mystic_mirror", MYSTIC_MIRROR);
         registerItem("magic_wand", MAGIC_WAND);
+        registerItem("crushed_glow_mushroom", CRUSHED_GLOW_MUSHROOM);
     }
 
     /**

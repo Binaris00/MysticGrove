@@ -27,6 +27,7 @@ public class ModelGenerator extends FabricModelProvider {
         itemModelGenerator.register(MysticItems.LUMINITE, Models.GENERATED);
         itemModelGenerator.register(MysticItems.MYSTIC_MIRROR, Models.HANDHELD);
         itemModelGenerator.register(MysticItems.MAGIC_WAND, Models.HANDHELD);
+        itemModelGenerator.register(MysticItems.CRUSHED_GLOW_MUSHROOM, Models.GENERATED);
 
     }
 }

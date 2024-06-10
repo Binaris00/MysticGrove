@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "glowshroom",
+  "ingredients": [
+    {
+      "item": "mystic_grove:glowshroom"
+    }
+  ],
+  "result": {
+    "item": "mystic_grove:crushed_glow_mushroom"
+  }
+}

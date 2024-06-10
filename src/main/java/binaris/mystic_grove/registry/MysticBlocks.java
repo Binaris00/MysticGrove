@@ -1,6 +1,7 @@
 package binaris.mystic_grove.registry;
 
 import binaris.mystic_grove.MysticGroveMod;
+import binaris.mystic_grove.block.GlowAir;
 import binaris.mystic_grove.block.GlowShroom;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -32,9 +33,8 @@ public final class MysticBlocks {
     public static Block MYSTIC_PLANKS = new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(4f));
     public static Block MYSTIC_LEAVES = new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(4f).nonOpaque());
     public static Block LUMINITE_ORE = new Block(FabricBlockSettings.copyOf(Blocks.GOLD_ORE).hardness(3.0f).resistance(3.0f).luminance(40).requiresTool());
-
-
     public static Block GLOW_SHROOM = new GlowShroom();
+    public static Block GLOW_AIR = new GlowAir();
     public static void register() {
         registerBlockItem("luminite_ore", LUMINITE_ORE);
         registerBlockItem("mystic_log", MYSTIC_LOG);
@@ -44,6 +44,7 @@ public final class MysticBlocks {
         registerBlockItem("mystic_planks", MYSTIC_PLANKS);
         registerBlockItem("mystic_leaves", MYSTIC_LEAVES);
         registerBlockItem("glowshroom", GLOW_SHROOM);
+        registerBlock("glow_air", GLOW_AIR);
 
         StrippableBlockRegistry.register(MYSTIC_LOG, STRIPPED_MYSTIC_LOG);
         StrippableBlockRegistry.register(MYSTIC_WOOD, STRIPPED_MYSTIC_WOOD);
