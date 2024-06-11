@@ -12,5 +12,8 @@ public class MysticGroveClient implements ClientModInitializer {
 
 		BlockRenderLayerMap.INSTANCE.putBlock(MysticBlocks.MYSTIC_LEAVES, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(MysticBlocks.GLOW_SHROOM, RenderLayer.getCutout());
+
+		BlockRenderLayerMap.INSTANCE.putBlock(MysticBlocks.ETHER_BLOSSOM, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(MysticBlocks.POTTED_ETHER_BLOSSOM, RenderLayer.getCutout());
 	}
 }

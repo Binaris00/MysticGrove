@@ -7,6 +7,7 @@
   "item.mystic_grove.mystic_mirror": "Mystic Mirror",
   "item.mystic_grove.magic_wand": "Magic Wand",
   "item.mystic_grove.crushed_glow_mushroom": "Crushed Glow Mushroom",
+  "block.mystic_grove.ether_blossom": "Ether Blossom",
 
   "item.mystic_grove.mystic_mirror.use": "New position set! X: %s, Y: %s, Z: %s",
   "item.mystic_grove.mystic_mirror.no_saved_pos": "No position saved, please use the mirror on a block to save a position",
@@ -29,5 +30,14 @@
   "block.mystic_grove.mystic_sapling": "Mystic Sapling",
   "item.mystic_grove.mystic_sapling": "Mystic Sapling",
   "block.mystic_grove.mystic_grass": "Mystic Grass",
-  "block.mystic_grove.glowshroom": "Glowshroom"
+  "block.mystic_grove.glowshroom": "Glowshroom",
+
+  "item.minecraft.tipped_arrow.effect.health_boost":                           "Arrow of Health Boost",
+  "item.minecraft.tipped_arrow.effect.long_health_boost":                      "Arrow of Health Boost",
+  "item.minecraft.lingering_potion.effect.health_boost":                       "Lingering Potion of Health Boost",
+  "item.minecraft.lingering_potion.effect.long_health_boost":                  "Lingering Potion of Health Boost",
+  "item.minecraft.potion.effect.health_boost":                                 "Potion of Health Boost",
+  "item.minecraft.potion.effect.long_health_boost":                            "Potion of Health Boost",
+  "item.minecraft.splash_potion.effect.health_boost":                          "Splash Potion of Health Boost",
+  "item.minecraft.splash_potion.effect.long_health_boost":                     "Splash Potion of Health Boost"
 }

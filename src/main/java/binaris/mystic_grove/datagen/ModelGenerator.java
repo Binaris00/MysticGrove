@@ -20,6 +20,8 @@ public class ModelGenerator extends FabricModelProvider {
         blockStateModelGenerator.registerLog(MysticBlocks.STRIPPED_MYSTIC_LOG).log(MysticBlocks.STRIPPED_MYSTIC_LOG).wood(MysticBlocks.STRIPPED_MYSTIC_WOOD);
         blockStateModelGenerator.registerSimpleCubeAll(MysticBlocks.MYSTIC_PLANKS);
         blockStateModelGenerator.registerSimpleCubeAll(MysticBlocks.MYSTIC_LEAVES);
+
+        blockStateModelGenerator.registerFlowerPotPlant(MysticBlocks.ETHER_BLOSSOM, MysticBlocks.POTTED_ETHER_BLOSSOM, BlockStateModelGenerator.TintType.NOT_TINTED);
     }
 
     @Override
