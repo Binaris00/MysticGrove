@@ -23,3 +23,11 @@ You can crush it to get Crushed Glowshroom, which can be used to create a perman
 # Ether Blossom
 
 Ether Blossom is a new plant that can be found in the Mystic Grove. Use it to create the health boost potion with an akward potion.
+
+# Mystic Deer
+
+The texture is a little buggy, but it's a new mob that can be found in the Mystic Grove and can interact in these ways:
+
+- If you use the magic wand on it, it will give you a random item.
+- If you hit it, it will give you a random bad effect.
+- If you feed it with a glowshroom, it will give you a random good effect.

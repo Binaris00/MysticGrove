@@ -1,5 +1,6 @@
 package binaris.mystic_grove.item;
 
+import binaris.mystic_grove.entities.MysticDeer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
@@ -34,6 +35,11 @@ public class MagicWand extends Item {
             List<Entity> entities = world.getOtherEntities(user, new Box(playerPos.x - radius, playerPos.y - radius, playerPos.z - radius, playerPos.x + radius, playerPos.y + radius, playerPos.z + radius));
 
             for (Entity entity : entities) {
+                if(entity instanceof MysticDeer) {
+                    entity.dropStack(new ItemStack(MysticDeer.goodItems.get(world.random.nextInt(MysticDeer.goodItems.size()))));
+                    user.sendMessage(Text.literal("The Mystic Deer dropped a gift!").formatted(Formatting.AQUA), true);
+                }
+
                 Vec3d entityPos = entity.getPos();
                 Vec3d direction = playerPos.subtract(entityPos).normalize();
                 entity.addVelocity(direction.x * ATTRACTION_FORCE, direction.y * ATTRACTION_FORCE, direction.z * ATTRACTION_FORCE);
