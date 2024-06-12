@@ -39,5 +39,7 @@
   "item.minecraft.potion.effect.health_boost":                                 "Potion of Health Boost",
   "item.minecraft.potion.effect.long_health_boost":                            "Potion of Health Boost",
   "item.minecraft.splash_potion.effect.health_boost":                          "Splash Potion of Health Boost",
-  "item.minecraft.splash_potion.effect.long_health_boost":                     "Splash Potion of Health Boost"
+  "item.minecraft.splash_potion.effect.long_health_boost":                     "Splash Potion of Health Boost",
+
+  "biome.mystic_grove.mystic_grove": "Mystic Grove"
 }

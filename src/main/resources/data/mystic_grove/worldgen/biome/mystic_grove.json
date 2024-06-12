@@ -36,8 +36,7 @@
       "minecraft:lake_lava_surface"
     ],
     [
-      "minecraft:amethyst_geode",
-      "minecraft:forest_rock"
+      "minecraft:amethyst_geode"
     ],
     [
       "minecraft:monster_room",
@@ -81,7 +80,6 @@
     ],
     [
       "minecraft:glow_lichen",
-      "minecraft:trees_plains",
       "minecraft:forest_flowers",
       "minecraft:patch_large_fern",
       "minecraft:brown_mushroom_normal",
@@ -131,16 +129,16 @@
         "weight": 8
       },
       {
-        "type": "minecraft:witch",
-        "maxCount": 3,
+        "type": "minecraft:horse",
+        "maxCount": 6,
         "minCount": 2,
         "weight": 5
       },
       {
-        "type": "minecraft:slime",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 100
+        "type": "minecraft:donkey",
+        "maxCount": 3,
+        "minCount": 1,
+        "weight": 1
       }
     ],
     "misc": [],
@@ -158,6 +156,12 @@
         "weight": 95
       },
       {
+        "type": "minecraft:zombie_villager",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 5
+      },
+      {
         "type": "minecraft:skeleton",
         "maxCount": 4,
         "minCount": 4,
@@ -170,10 +174,22 @@
         "weight": 100
       },
       {
+        "type": "minecraft:slime",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 100
+      },
+      {
         "type": "minecraft:enderman",
         "maxCount": 4,
         "minCount": 1,
         "weight": 10
+      },
+      {
+        "type": "minecraft:witch",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 5
       }
     ],
     "underground_water_creature": [

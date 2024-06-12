@@ -1,6 +1,7 @@
 package binaris.mystic_grove;
 
 import binaris.mystic_grove.registry.*;
+import binaris.mystic_grove.world.biome.MysticGroveConfiguredFeatures;
 import binaris.mystic_grove.world.biome.MysticGroveRegion;
 import binaris.mystic_grove.world.biome.MysticGroveRules;
 import net.fabricmc.api.ModInitializer;
@@ -33,6 +34,7 @@ public class MysticGroveMod implements ModInitializer, TerraBlenderApi {
 		MysticItemGroup.register();
 		MysticPotions.init();
 		MysticEntities.register();
+		MysticGroveConfiguredFeatures.init();
 	}
 
 	/**
