@@ -13,11 +13,15 @@ import net.minecraft.world.gen.feature.*;
 public class MysticGroveConfiguredFeatures {
     public static final RegistryKey<PlacedFeature> LUMINITE_ORE = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MysticGroveMod.MODID,"luminite_ore"));
     public static final RegistryKey<PlacedFeature> MYSTIC_TREE = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MysticGroveMod.MODID,"mystic_tree"));
+    public static final RegistryKey<PlacedFeature> GLOW_SHROOM = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MysticGroveMod.MODID,"glowshroom"));
+    public static final RegistryKey<PlacedFeature> FLOWERS = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MysticGroveMod.MODID,"flowers"));
     public static final RegistryKey<Biome> MYSTIC_GROVE = RegistryKey.of(RegistryKeys.BIOME, new Identifier(MysticGroveMod.MODID,"mystic_grove"));
 
 
     public static void init(){
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(MYSTIC_GROVE), GenerationStep.Feature.UNDERGROUND_ORES, LUMINITE_ORE);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(MYSTIC_GROVE), GenerationStep.Feature.VEGETAL_DECORATION, MYSTIC_TREE);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(MYSTIC_GROVE), GenerationStep.Feature.VEGETAL_DECORATION, GLOW_SHROOM);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(MYSTIC_GROVE), GenerationStep.Feature.VEGETAL_DECORATION, FLOWERS);
     }
 }

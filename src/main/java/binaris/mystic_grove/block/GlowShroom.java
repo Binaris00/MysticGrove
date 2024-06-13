@@ -1,10 +1,8 @@
 package binaris.mystic_grove.block;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockRenderType;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.ShapeContext;
+import net.minecraft.block.*;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.util.function.BooleanBiFunction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
@@ -13,7 +11,7 @@ import net.minecraft.world.BlockView;
 
 import java.util.stream.Stream;
 
-public class GlowShroom extends Block {
+public class GlowShroom extends FlowerBlock {
     VoxelShape SHAPE = Stream.of(
             Block.createCuboidShape(7, 0, 7, 9, 8, 9),
             Block.createCuboidShape(1, 6, 3, 3, 8, 13),
@@ -24,7 +22,7 @@ public class GlowShroom extends Block {
     ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
 
     public GlowShroom() {
-        super(FabricBlockSettings.create().breakInstantly().luminance(7).burnable().nonOpaque());
+        super(StatusEffects.GLOWING, 10, FabricBlockSettings.copyOf(Blocks.RED_MUSHROOM).luminance(7).nonOpaque());
     }
 
     @Override

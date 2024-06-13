@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "mystic_grove:luminite_block",
     "mystic_grove:luminite_ore"
   ]
 }

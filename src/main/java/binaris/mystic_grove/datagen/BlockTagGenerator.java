@@ -16,6 +16,7 @@ public class BlockTagGenerator extends FabricTagProvider.BlockTagProvider{
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .add(MysticBlocks.LUMINITE_BLOCK)
                 .add(MysticBlocks.LUMINITE_ORE);
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
@@ -28,6 +29,7 @@ public class BlockTagGenerator extends FabricTagProvider.BlockTagProvider{
                 .add(MysticBlocks.MYSTIC_LEAVES);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
+                .add(MysticBlocks.LUMINITE_BLOCK)
                 .add(MysticBlocks.LUMINITE_ORE);
 
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)

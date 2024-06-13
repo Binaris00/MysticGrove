@@ -3,6 +3,7 @@ package binaris.mystic_grove.registry;
 import binaris.mystic_grove.MysticGroveMod;
 import binaris.mystic_grove.block.GlowAir;
 import binaris.mystic_grove.block.GlowShroom;
+import binaris.mystic_grove.block.LuminiteBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
@@ -33,6 +34,7 @@ public final class MysticBlocks {
     public static Block LUMINITE_ORE = new Block(FabricBlockSettings.copyOf(Blocks.GOLD_ORE).hardness(3.0f).resistance(3.0f).luminance(40).requiresTool());
     public static Block GLOW_SHROOM = new GlowShroom();
     public static Block GLOW_AIR = new GlowAir();
+    public static Block LUMINITE_BLOCK = new LuminiteBlock();
 
     public static final Block ETHER_BLOSSOM = new FlowerBlock(StatusEffects.FIRE_RESISTANCE, 10,
             FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision());
@@ -50,6 +52,7 @@ public final class MysticBlocks {
         registerBlock("glow_air", GLOW_AIR);
         registerBlockItem("ether_blossom", ETHER_BLOSSOM);
         registerBlock("potted_ether_blossom", POTTED_ETHER_BLOSSOM);
+        registerBlockItem("luminite_block", LUMINITE_BLOCK);
 
         StrippableBlockRegistry.register(MYSTIC_LOG, STRIPPED_MYSTIC_LOG);
         StrippableBlockRegistry.register(MYSTIC_WOOD, STRIPPED_MYSTIC_WOOD);
