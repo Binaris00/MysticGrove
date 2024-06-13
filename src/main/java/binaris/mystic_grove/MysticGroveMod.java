@@ -35,6 +35,7 @@ public class MysticGroveMod implements ModInitializer, TerraBlenderApi {
 		MysticPotions.init();
 		MysticEntities.register();
 		MysticGroveConfiguredFeatures.init();
+		MysticKeys.register();
 	}
 
 	/**

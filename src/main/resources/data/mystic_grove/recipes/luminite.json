@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "mystic_grove:luminite_block"
+    }
+  ],
+  "result": {
+    "item": "mystic_grove:luminite",
+    "count": 9
+  }
+}

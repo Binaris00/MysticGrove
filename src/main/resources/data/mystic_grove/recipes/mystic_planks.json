@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "mystic_grove:mystic_log"
+    }
+  ],
+  "result": {
+    "item": "mystic_grove:mystic_planks",
+    "count": 4
+  }
+}
